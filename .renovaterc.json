@@ -1,5 +1,9 @@
 {
     "extends": [
         "config:recommended"
+    ],
+    "platform": "github",
+    "repositories": [
+        "ledniov/dependabot-demo"
     ]
 }
