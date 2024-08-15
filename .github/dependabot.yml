@@ -6,7 +6,7 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-      default:
+      action-workflows:
         patterns:
           - "*"
   - package-ecosystem: npm
@@ -23,5 +23,21 @@ updates:
       interval: "weekly"
     groups:
       bundler-packages:
+        patterns:
+          - "*"
+  - package-ecosystem: docker
+    directory: "/docker"
+    schedule:
+      interval: "weekly"
+    groups:
+      docker-images:
+        patterns:
+          - "*"
+  - package-ecosystem: docker
+    directory: "/kubernetes"
+    schedule:
+      interval: "weekly"
+    groups:
+      k8s-manifests:
         patterns:
           - "*"
