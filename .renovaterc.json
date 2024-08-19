@@ -2,6 +2,9 @@
     "extends": [
         "config:recommended"
     ],
+    "repositories": [
+        "ledniov/dependabot-demo"
+    ],
     "kubernetes": {
         "fileMatch": [
             "kubernetes/.+/.+\\.yaml$"
