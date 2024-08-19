@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: example-container
-        image: nginx:1.19.0 # Outdated Docker image
+        image: nginx:1.27.1 # Outdated Docker image
         ports:
         - containerPort: 80
