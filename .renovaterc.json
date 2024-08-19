@@ -30,7 +30,7 @@
                 "endoflife-date"
             ],
             "matchPackageNames": [
-                "nodejs"
+                "aws-lambda"
             ],
             "extractVersion": "^nodejs(?<version>.*)$"
         }
