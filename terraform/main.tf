@@ -28,6 +28,7 @@ resource "aws_db_instance" "example_rds" {
 # Lambda function
 resource "aws_lambda_function" "example_lambda" {
     function_name = "example-lambda"
+    # renovate: datasource=endoflife-date depName=aws-lambda versioning=loose
     runtime       = "nodejs12.x"
     handler       = "index.handler"
     memory_size   = 128

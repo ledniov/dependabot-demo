@@ -14,12 +14,23 @@
     "customManagers": [
         {
             "customType": "regex",
-            "description": "Update Node version for in Github Actions",
+            "description": "Update Node version for in Github Actions based on the AWS Lambda Runtime",
             "fileMatch": [
                 ".+\\.yml$"
             ],
             "matchStrings": [
                 "\\s*#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s.*?node-version:\\s*'(?<currentValue>.*)'"
+            ],
+            "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{/if}}"
+        },
+        {
+            "customType": "regex",
+            "description": "Update AWS Lambda Runtime in Terraform",
+            "fileMatch": [
+                ".+\\.yml$"
+            ],
+            "matchStrings": [
+                "\\s*#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s.*?runtime\\s*=\\s*\"nodejs(?<currentValue>.*)\""
             ],
             "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{/if}}"
         }
