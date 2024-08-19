@@ -41,3 +41,19 @@ updates:
       k8s-manifests:
         patterns:
           - "*"
+  - package-ecosystem: docker
+    directory: "/docker/compose-app"
+    schedule:
+      interval: "weekly"
+    groups:
+      docker-compose-files:
+        patterns:
+          - "*"
+  - package-ecosystem: terraform
+    directory: "/terraform"
+    schedule:
+      interval: "weekly"
+    groups:
+      terraform-providers:
+        patterns:
+          - "*"
