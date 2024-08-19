@@ -27,7 +27,7 @@
             "customType": "regex",
             "description": "Update AWS Lambda Runtime in Terraform",
             "fileMatch": [
-                ".+\\.yml$"
+                ".+\\.tf$"
             ],
             "matchStrings": [
                 "\\s*#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s.*?runtime\\s*=\\s*\"nodejs(?<currentValue>.*)\""
