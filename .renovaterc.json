@@ -2,11 +2,34 @@
     "extends": [
         "config:recommended"
     ],
-    "repositories": [
-        "ledniov/dependabot-demo"
-    ],
     "kubernetes": {
-        "fileMatch": ["kubernetes/.+/.+\\.yaml$"]
+        "fileMatch": [
+            "kubernetes/.+/.+\\.yaml$"
+        ]
     },
-    "groupName": "all"
+    "groupName": "all",
+    "customManagers": [
+        {
+            "customType": "regex",
+            "description": "Update Node version for in Github Actions",
+            "fileMatch": [
+                ".+\\.yml$"
+            ],
+            "matchStrings": [
+                "\\s*#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s.*?node-version:\\s*'(?<currentValue>.*)'"
+            ],
+            "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{/if}}"
+        }
+    ],
+    "packageRules": [
+        {
+            "matchDatasources": [
+                "endoflife-date"
+            ],
+            "matchPackageNames": [
+                "nodejs"
+            ],
+            "extractVersion": "^nodejs(?<version>.*)$"
+        }
+    ]
 }

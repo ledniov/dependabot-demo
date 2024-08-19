@@ -1,4 +1,4 @@
-name: Greetings
+name: Greetings Node
 
 on: [pull_request, issues]
 
@@ -8,6 +8,7 @@ jobs:
     steps:
     - uses: actions/setup-node@v3
       with:
-        node-version: '18'
+        # renovate: datasource=endoflife-date depName=nodejs versioning=loose
+        node-version: '18.x'
     - name: Print Node Version
       run: node --version
