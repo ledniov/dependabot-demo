@@ -1,0 +1,21 @@
+
+services:
+  localstack:
+    image: ${BASE_LOCALSTACK_IMAGE_3_3_0-localstack/localstack:3.3.0}
+    ports:
+      - "4518:4518"
+    environment:
+      - DEBUG=${DEBUG-}
+      - GATEWAY_LISTEN=0.0.0.0:4518
+    volumes:
+      - "${DOCKER_SOCK_PATH:-/var/run/docker.sock}:/var/run/docker.sock"
+
+  deployment:
+    image: ${BASE_NODE_IMAGE-node:18}
+    depends_on:
+      - localstack
+
+  tests:
+    image: node:18
+    depends_on:
+      - localstack

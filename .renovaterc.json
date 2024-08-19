@@ -4,5 +4,9 @@
     ],
     "repositories": [
         "ledniov/dependabot-demo"
-    ]
+    ],
+    "kubernetes": {
+        "fileMatch": ["kubernetes/.+/.+\\.yaml$"]
+    },
+    "groupName": "all"
 }
