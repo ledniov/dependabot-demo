@@ -10,7 +10,6 @@
             "kubernetes/.+/.+\\.yaml$"
         ]
     },
-    "groupName": "all",
     "customManagers": [
         {
             "customType": "regex",
