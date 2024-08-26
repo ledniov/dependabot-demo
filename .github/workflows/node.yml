@@ -6,7 +6,7 @@ jobs:
   greeting:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/setup-node@v3
+    - uses: actions/setup-node@v4
       with:
         # renovate: datasource=endoflife-date depName=aws-lambda versioning=loose
         node-version: '18.x'
