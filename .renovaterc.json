@@ -44,5 +44,11 @@
             ],
             "extractVersion": "^nodejs(?<version>.*)$"
         }
-    ]
+    ],
+    "dependencyDashboardOSVVulnerabilitySummary": "unresolved",
+    "osvVulnerabilityAlerts": true,
+    "vulnerabilityAlerts": {
+        "enabled": true
+
+    }
 }
