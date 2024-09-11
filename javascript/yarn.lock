@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@handsontable/formulajs@^2.0.0":
+"@handsontable/formulajs@^2.0.1":
   version "2.0.2"
-  resolved "https://registry.npmjs.org/@handsontable/formulajs/-/formulajs-2.0.2.tgz"
+  resolved "https://registry.yarnpkg.com/@handsontable/formulajs/-/formulajs-2.0.2.tgz#5be4b9226cc47811f646ae46b1b985230cd82995"
   integrity sha512-maIyMJtYjA5e/R9nyA22Qd7Yw73MBSxClJvle0a8XWAS/5l6shc/OFpQqrmwMy4IXUCmywJ9ER0gOGz/YA720w==
   dependencies:
     bessel "^1.0.2"
@@ -63,12 +63,12 @@ graceful-fs@^4.1.6, graceful-fs@^4.2.0:
   resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
 
-hot-formula-parser@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/hot-formula-parser/-/hot-formula-parser-3.0.0.tgz"
-  integrity sha512-CHLTrsrv29it5XPcHalNO8ClcJGHefwf599MePlG5dYzxxtbPqx/qt8CkrqvxQeNA5XtkAUcxU62OFv0z2L49A==
+hot-formula-parser@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/hot-formula-parser/-/hot-formula-parser-3.0.1.tgz#9ec0d3abd691d9dbe3febec51027ebb7d4f1efd4"
+  integrity sha512-QhYPVlVh/GF/hHtBp+MwgDp5kpgrrjeJi3d3/GxTWtqwLBOOM4KlZT/YWcsfZj5JE68MNvFgj3ZzYpkGyvGtwA==
   dependencies:
-    "@handsontable/formulajs" "^2.0.0"
+    "@handsontable/formulajs" "^2.0.1"
     tiny-emitter "^2.0.1"
 
 js-yaml@^4.1.0:
