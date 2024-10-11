@@ -1,0 +1,8 @@
+name: Parent workflow
+
+on: workflow_dispatch
+
+jobs:
+  reusable:
+    name: reusable echo
+    uses: ./.github/workflows/reusable_workflow.yml
