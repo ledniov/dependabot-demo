@@ -1,0 +1,14 @@
+name: Testing reusable workflow
+
+on:
+  workflow_call:
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        env:
+          GIT_BRANCH: ${{ github.ref_name }}
+        run: echo $GIT_BRANCH
+          
