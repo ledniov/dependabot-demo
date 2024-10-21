@@ -1,6 +1,6 @@
 name: Greetings Node
 
-on: [pull_request, issues]
+on: [pull_request, push]
 
 jobs:
   greeting:
@@ -12,3 +12,5 @@ jobs:
         node-version: '18.x'
     - name: Print Node Version
       run: node --version
+    - name: Print Branch name
+      run: echo ${{ github.head_ref || github.ref_name }}
