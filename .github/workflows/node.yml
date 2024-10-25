@@ -14,3 +14,5 @@ jobs:
       run: node --version
     - name: Print Branch name
       run: echo ${{ github.head_ref || github.ref_name }}
+    - name: Print Base Ref
+      run: echo ${{ github.base_ref }}
