@@ -1,8 +1,16 @@
 name: Parent workflow
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+  pull_request:
 
 jobs:
+  start:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start
+        run: echo "start"
+
   reusable:
     name: reusable echo
     uses: ./.github/workflows/reusable_workflow.yml
