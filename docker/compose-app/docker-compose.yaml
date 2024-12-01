@@ -16,6 +16,6 @@ services:
       - localstack
 
   tests:
-    image: node:18
+    image: node:20
     depends_on:
       - localstack
