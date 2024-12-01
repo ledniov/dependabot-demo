@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@handsontable/formulajs@^2.0.0":
+"@handsontable/formulajs@^2.0.1":
   version "2.0.2"
-  resolved "https://registry.npmjs.org/@handsontable/formulajs/-/formulajs-2.0.2.tgz"
+  resolved "https://registry.yarnpkg.com/@handsontable/formulajs/-/formulajs-2.0.2.tgz#5be4b9226cc47811f646ae46b1b985230cd82995"
   integrity sha512-maIyMJtYjA5e/R9nyA22Qd7Yw73MBSxClJvle0a8XWAS/5l6shc/OFpQqrmwMy4IXUCmywJ9ER0gOGz/YA720w==
   dependencies:
     bessel "^1.0.2"
@@ -63,12 +63,12 @@ graceful-fs@^4.1.6, graceful-fs@^4.2.0:
   resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
 
-hot-formula-parser@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/hot-formula-parser/-/hot-formula-parser-3.0.0.tgz"
-  integrity sha512-CHLTrsrv29it5XPcHalNO8ClcJGHefwf599MePlG5dYzxxtbPqx/qt8CkrqvxQeNA5XtkAUcxU62OFv0z2L49A==
+hot-formula-parser@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/hot-formula-parser/-/hot-formula-parser-3.0.1.tgz#9ec0d3abd691d9dbe3febec51027ebb7d4f1efd4"
+  integrity sha512-QhYPVlVh/GF/hHtBp+MwgDp5kpgrrjeJi3d3/GxTWtqwLBOOM4KlZT/YWcsfZj5JE68MNvFgj3ZzYpkGyvGtwA==
   dependencies:
-    "@handsontable/formulajs" "^2.0.0"
+    "@handsontable/formulajs" "^2.0.1"
     tiny-emitter "^2.0.1"
 
 js-yaml@^4.1.0:
@@ -107,10 +107,10 @@ lodash.isequal@^4.5.0:
   resolved "https://registry.npmjs.org/lodash.isequal/-/lodash.isequal-4.5.0.tgz"
   integrity sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==
 
-lodash@^4.17.20:
-  version "4.17.20"
-  resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.20.tgz"
-  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
+lodash@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 ms@2.1.2:
   version "2.1.2"
